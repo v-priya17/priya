@@ -44,8 +44,8 @@ mul(10,4)
     console.log('odd')
  }
 
- for(i=0;i<5;i++){
-    if(i%2!=0){
+ for(i=0;i<10;i++){
+    if(i%2==0){
         console.log(i)
     }
  }
@@ -70,3 +70,69 @@ while(n<=10){
     }
     n++;
 }
+
+
+m=1
+do{
+    console.log(m)
+    m++;
+}
+while(m<6);
+
+
+
+let hero="go";
+switch(hero){
+    case "roman reigns":
+        console.log(hero)
+        break;
+    case "john cena":
+        console.log(hero)
+        break;
+    case "randy":
+        console.log(hero)
+        break;
+    default:
+        console.log("jacky chan")
+        break;
+    
+}
+
+
+n=5;
+let result=(n%2==0) ?"even":"odd";
+console.log(result);
+
+count=0;
+ for(i=0;i<10;i++){
+    if(i%2==0){
+     console.log(i)
+     count=count+i;  
+    }
+ }
+ console.log(count)
+
+
+ w=0;
+ for(i=0;i<10;i++){
+    if(i%2!=0){
+        console.log(i)
+        w=w+i;
+    }
+ }
+ console.log(w)
+
+
+ function eadd(){
+    let a=0;
+     for(i=0;i<10;i++){
+       if(i%2==0){
+        console.log(i)
+        a=a+i;
+       }
+     }
+    console.log(a)
+ }
+ eadd()
+ 
+ 
