@@ -225,9 +225,16 @@ function love(callback){
 }
 love(food)
 
-const btn= document.getElementById();
-
+const btn=document.getElementById("btnl");
 btn.onclick=function(){
     alert("vaanga palagalam")
+
     window.open("https://www.instagram.com/")
+}
+
+
+const btn1=document.querySelectorAll("btn");
+btn1.onclick=function(){
+    alert("welcome genius!!!")
+    window.open("https://www.google.co.in/")
 }
