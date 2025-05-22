@@ -4,6 +4,8 @@ import Child from './Child'
 import { useState } from 'react'
 import Mapp from './Mapp'
 import audio from './audio.mp3'
+import Name1 from './Name1'
+import Name from './Name'
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
     setCount(count+2)
   }
 
+
   const loger=[
     {id:1,name:"priya",depo:"cs",year:2},
     {id:2,name:"deepika",depo:"ca"},
@@ -19,8 +22,26 @@ function App() {
     {id:4,name:"dhina",depo:"ai"}
   ]
 
+  
+  // state in event
+  const [name,setName] = useState("")
+  function handClick(){
+    alert("Call from event")
+  }
+
+  const [num,setNum]=useState("")
+
+  
   return (
     <>
+
+    <Name1  num={num}/>
+    <Name setNum={setNum}/>
+
+    <button onClick={handClick}>Event trigger</button><br />
+        <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
+        <p>hello {name}</p>
+        <hr />
 
     {/* props */}
     <Child Name={"Justin"} Age={24} gender={"male"}/><hr></hr>
