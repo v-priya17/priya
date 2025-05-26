@@ -36,7 +36,7 @@ function App() {
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
+    <div className="hero">
       <h2>Welcome to Crunchy Bites</h2>
       <p>Fresh, tasty meals every day</p>
     </div>
@@ -45,18 +45,18 @@ function App() {
   <section id="menu">
     <h2>Our Menu</h2>
     <div id="menu-items">
-      <div class="menu-item">
-        <img src={Grill} alt="" />
+      <div className="menu-item">
+        <img className="item1" src={Grill} alt="" />
         <h3>Grilled Chicken</h3>
         <p>$12.99</p>
       </div>
-      <div class="menu-item">
-        <img src={Pasta} style={{width:'220px',height:'150px'}} alt="" />
+      <div className="menu-item">
+        <img className="item2" src={Pasta} alt="" />
         <h3>Veggie Pasta</h3>
         <p>$10.49</p>
       </div>
-      <div class="menu-item">
-        <img src={Burger} alt="" />
+      <div className="menu-item">
+        <img className="item3" src={Burger} alt="" />
         <h3>Burger</h3>
         <p>$11.99</p>
       </div>

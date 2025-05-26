@@ -98,23 +98,33 @@ section {
 }
 
 .menu-item {
-  align-items: flex-start;
+  /* align-items: flex-start; */
   background-color: #ccc; 
   padding: 15px;
-  width: 200px;
+  height: 250px;
+  /* width: 200px; */
   border-radius: 3px;
 }
 
-.grill{
-  
+
+
+.item1{
+  /* padding: 1rem; */
+  width: 200px;
+  /* border-radius: 5px; */
+
+}
+.item2{
+
+  width:200px;
+  height:100px;
+  /* align-items: end; */
+  /* height: 0px; */
 }
 
-/* .item1{
-  padding: 1rem;
-  width: 200px;
-  border-radius: 5px;
-
-} */
+.item3{
+  width:200px
+}
 
 form {
   max-width: 400px;

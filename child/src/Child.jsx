@@ -29,7 +29,8 @@ return(
   <div className="row">
     {products.map((product)=>(
       
-      <div className="col-3" key={product.id} ><div className="card" style={{width:"18rem"}}>
+      <div className="col-3" key={product.id} >
+      <div className="card" style={{width:"18rem"}}>
       <img src={product.images} className="card-img-top" alt="Show it"/>
       <div className="card-body">
       <h5 className="card-title">{product.title}</h5>

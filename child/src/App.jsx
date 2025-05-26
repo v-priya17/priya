@@ -9,6 +9,7 @@ import Data from "./Data";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './Home'
+import Postme from './Postme'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -117,10 +118,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/child" element={<Child products={users}/>}></Route>
+        <Route path="/postme" element={<Postme/>}></Route>
       </Routes>
     </Router>
     </>
-
     
   );
 }

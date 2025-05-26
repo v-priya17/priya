@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 function Home() {
 
@@ -8,9 +8,17 @@ function Home() {
         navigate("/child")
     }
 
+
+    const handleNavigate1=()=>{
+      navigate("/postme")
+    }
+    
+
+
   return (
-    <div>className='text-center
+    <div className='text-center'>
     <button className='btn btn-primary' onClick={handleNavigate}>Go to Child  </button>
+    <button className='btn btn-primary' onClick={handleNavigate1}>go to postme</button>
     <h2>Hii</h2>
     </div>
   )
